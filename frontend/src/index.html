@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="https://yt3.ggpht.com/a/AATXAJyzY2LL0F6T5IpbyVwv9a7zDkRXhQnHwcFz2Klp=s100-c-k-c0xffffffff-no-rj-mo" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,500;0,700;1,400&display=swap" />
+    <title>Qonexia | Negocios Online</title>
 </head>
 <body>
     <div id="root"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(register => {
+                    console.log(register)
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+            })
+        }
+    </script>
 </body>
 </html>

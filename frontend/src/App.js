@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Index from './pages/index'
+import { GlobalStyles } from './GlobalStyle'
 
 function App() {
-    return <h2>Hola Mundo</h2>
+    return <Fragment>
+        <GlobalStyles />
+        <Index />
+    </Fragment>
 }
 
 export default App
