@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 import { Header } from './style'
 import video from '../../static/video/video.mp4'
@@ -11,9 +12,9 @@ function ContentHeader() {
         </div>
         <div className="header-menu">
             <ul className="list-nav">
-                <li>Inicio</li>
-                <li>Products</li>
-                <li>Social Media</li>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="products">Products</Link></li>
+                <li><a target="_blank" href="https://facebook.com/QONEXIA">Social Media</a></li>
             </ul>
         </div>
         <div className="header-title">
